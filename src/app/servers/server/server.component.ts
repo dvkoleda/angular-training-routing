@@ -27,5 +27,6 @@ export class ServerComponent implements OnInit {
 
   onEdit() {
     // this.router.navigate(['/servers', this.server.id, 'edit']); // we can just use relative pass
+    this.router.navigate(['edit'], {relativeTo: this.activatedRoute, queryParamsHandling: 'preserve'});
   }
 }
